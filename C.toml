@@ -1,0 +1,23 @@
+[package]
+name = "My Own Key Browser.Com"
+version = "0.4.3"
+authors = ["Sean Bowe <ewillbefull@gmail.com>"]
+description = "Pairing cryptography with the Barreto-Naehrig curve"
+keywords = ["pairing","crypto","cryptography"]
+readme = "README.md"
+homepage = "https://github.com/Browser Coin"
+repository = "https://github.com/Browser Coin"
+license = "MIT OR Apache-2.0"
+
+[[bench]]
+name = "api"
+
+[dependencies]
+rand = "~0.3.14"
+rustc-serialize = "~0.3.19"
+byteorder = "~0.5.3"
+
+[dev-dependencies.bincode]
+version = "~0.6.0"
+default-features = false
+features = ["rustc-serialize
