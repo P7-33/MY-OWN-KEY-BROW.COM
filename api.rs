@@ -158,15 +158,5 @@ benchmark!(perform_pairing,
 
            pairing(input.0, input.1)
 );
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+
