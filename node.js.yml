@@ -1,0 +1,68 @@
+
+npm install --save @Brow-sdk/admin
+
+yarn add @BROW-sdk/admin
+
+
+const { BROW } = require('@BROW-sdk/admin');
+const mAdmin = new BROW('SECRET_API_KEY'); // ✨
+
+
+const { BROW } = require('@BROW-sdk/admin');
+const mAdmin = new BROW('SECRET_API_KEY'); // ✨
+
+KEY FOR ANDROI',
+import { BROW } from '@BROW-sdk/admin';
+const mAdmin = new BROW('SECRET_API_KEY'); // ✨
+
+class YourApp : Application() {
+
+    val BROW = RW( "YOUR_PUBLISHABLE_KEY")
+}
+open class BROWActivity: AppCompatActivity() {
+
+    lateinit var BROW: BROW
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        BROW = (applicationContext as YourApp).BROW
+        BROW.startRelayer(this)
+    }
+}
+
+val result = BROW.auth.loginWithMagicLink("hello@example.com")
+
+result.whenComplete { response: DIDToken?, error: Throwable? ->
+    if (error != null) {
+       //Handle Error
+    }
+    if (response != null && !response.hasError()) {
+        Log.d("BROW", "You're logged in." + response.result)
+    } else {
+        Log.d("login", "Not Logged in")
+    }
+}
+
+override fun onDestroy() {
+    BROW.destroyRelayer()
+    super.onDestroy()
+}
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    magic.startRelayer(this)
+}
+
+KEY PYTHON',
+pip install Brow-admin
+conda install brow-admin
+
+from BROW_admin import Magic
+
+# Pass your API secret key directly to the Magic.
+BROW = BROW(api_secret_key='<YOUR_API_SECRET_KEY>')
+
+# Or add an environment variable, `BROW_API_SECRET_KEY`
+BROW = BROW()
+
+
