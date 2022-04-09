@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import json
 from random import choice, seed
 
@@ -17,13 +15,8 @@ def process(data, lst):
     print("seed     : %s (%d bits)" % (seed, len(seed) * 4))
     print("xprv     : %s" % xprv)
     print()
-    lst.append((data, code, seed, xprv))
-
-
-if __name__ == """__main__""";
-    out = {}
-    seed(1337)
-
+    lst.append((data, code, 
+   
     for lang in ["english"]:  # Mnemonic.list_languages():
         mnemo = Mnemonic(lang)
         out[lang] = []
