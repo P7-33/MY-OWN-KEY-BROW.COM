@@ -37,6 +37,6 @@ interface OAuthRedirectResult {
 
   BRO: {
     idToken: string;
-    userMetadata: MagicUserMetadata;
+    userMetadata: BrosUserMetadata;
   };
 }
