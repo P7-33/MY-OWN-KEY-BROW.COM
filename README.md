@@ -1,7 +1,7 @@
 # MY-OWN-KEY-BROW.COM
 
-
- npm install Brow-sdk @Brow-ext/oauth
+https://github.com/P7-33/MY-OWN-KEY-BROW.COM.wiki.git
+npm install Brow-sdk @Brow-ext/oauth
 
 import { Brow } from 'Brow-sdk';
 import { OAuthExtension } from '@Brow-ext/oauth';
