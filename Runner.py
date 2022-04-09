@@ -20,6 +20,23 @@ interface OAuthRedirectResult {
     scope: string[];
     accessToken: string;
     userHandle: string;
+// Construct the user's claim
+const claim = JSON.stringify({
+    iat: Math.floor(Date.now() / 1000),
+    ext: Math.floor(Date.now() / 1000) + lifespan,
+    iss: `did:ethr:${user_public_address}`,
+    sub: subject,
+    aud: audience,
+    nbf: Math.floor(Date.now() / 1000),
+    tid: uuid(),
+});
+
+// Sign the claim with the user's private key
+// (this way the claim is verifiable and impossible to forge).
+const proof = sign(claim);
+
+// Encode the DIDToken so it can be transported over HTTP.
+const DIDToken = btoa(JSON.stringify([proof, claim]));
 
     // `userInfo` contains the OpenID Connect profile information
     // about the user. The schema of this object should match the
