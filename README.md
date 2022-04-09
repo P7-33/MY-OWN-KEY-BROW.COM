@@ -1,20 +1,20 @@
-# MY-OWN-KEY-BROWS.COM
+# MY-OWN-KEY-BROW.COM
 
 
- npm install Brows-sdk @BroBrows-ext/oauth
+ npm install Brow-sdk @Brow-ext/oauth
 
-import { Brows } from 'Brows-sdk';
-import { OAuthExtension } from '@Brows-ext/oauth';
+import { Brow } from 'Brow-sdk';
+import { OAuthExtension } from '@Brow-ext/oauth';
 
-const brows = new brows('YOUR_API_KEY', {
+const brow = new brows('YOUR_API_KEY', {
   extensions: [new OAuthExtension()],
 });
-await magic.oauth.loginWithRedirect({
+await Brow.oauth.loginWithRedirect({
   provider: '...' /* 'google', 'facebook', 'apple', or 'github' */,
   redirectURI: 'https://your-app.com/your/oauth/callback',
   scope: ['user:email'] /* optional */,
 });
-const result = await brows.oauth.getRedirectResult();
+const result = await brow.oauth.getRedirectResult();
 
 // Result has the following interface
 interface OAuthRedirectResult {
@@ -35,7 +35,7 @@ interface OAuthRedirectResult {
     userInfo: ...;
   };
 
-  magic: {
+  BRO: {
     idToken: string;
     userMetadata: MagicUserMetadata;
   };
