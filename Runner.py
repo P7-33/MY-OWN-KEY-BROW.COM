@@ -52,8 +52,8 @@ const DIDToken = btoa(JSON.stringify([proof, claim]));
     userInfo: ...;
   };
 
-  BRO: {
+  Brow: {
     idToken: string;
-    userMetadata: BrosUserMetadata;
+    userMetadata: BrowUserMetadata;
   };
 }
